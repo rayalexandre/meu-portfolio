@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="">
 
 <head>
     <meta charset="UTF-8">
@@ -16,67 +16,76 @@
 <body>
 
 
-    <header>
-        <nav>
-            <ul>
+    <header><!-- Cabeçalho -->
+        <nav class="menu-desktop">
+            <ul class="menu menu-principal">
+                <li class="menu-item">
+                    <a href="" class="menu-link">
+                        <span class="menu-text"> home </span>
+                    </a>
+                </li>
+
                 <li>
-                <a href="">
-                    <span> home </span>
-                </a>
-            </li>
+                    <a href="" class="menu-link">
+                        <span class="menu-text">projeto</span>
+                    </a>
+                </li>
 
-            <li>
-                <a href="">
-                    <span>projeto</span>
-                </a>
-            </li>
+                <li>
+                    <a href="" class="menu-link">
+                        <span class="menu-text">sobre</span>
+                    </a>
+                </li>
 
-            <li>
-                <a href="">
-                    <span>sobre</span>
-                </a>
-            </li>
-            
-            <li>
-                <a href="">
-                    <span>contato</span>
-                </a>
-            </li>
+                <li>
+                    <a href="" class="menu-link">
+                        <span class="menu-text">contato</span>
+                    </a>
+                </li>
 
             </ul>
-        </nav>
+        </nav class>
         <!-- trocar cor tema -->
-        <div>
-           <i class="bi bi-moon-fill"></i> 
-            <!-- Botão Mobile-->
-            <i class="bi bi-list"></i>
+        <div class="header-toggle">
+            <i class="bi bi-moon-fill" id="toggleTheme"> </i>
+
+
+
+            <button id="menuHamburger" class="btn-menu-mobile">
+
+                <!-- Botão Mobile-->
+                <i class="bi bi-list"></i>
+
+            </button>
+
+
         </div>
     </header>
 
     <!-- Estrutura Menu Mobile -->
-    <nav>
-        <ul>
-            <li>
-                <a href="">
-                    <span> home </span>
+    <nav class="menu-mobile" id="menuMobile">
+        <ul class="menu-list">
+            <li class="menu-item">
+                <a href="" class="menu-link">
+                    <span class="menu-text"> home </span>
                 </a>
             </li>
 
-            <li>
-                <a href="">
-                    <span>projeto</span>
+            <li class="menu-item">
+                <a href="" class="menu-link">
+                    <span class="menu-text">projeto</span>
                 </a>
             </li>
 
-            <li>
-                <a href="">
-                    <span>sobre</span>
+            <li class="menu-item">
+                <a href="" class="menu-link">
+                    <span class="menu-text">sobre</span>
                 </a>
             </li>
-            
-            <li>
-                <a href="">
-                    <span>contato</span>
+
+            <li class="menu-item">
+                <a href="" class="menu-link">
+                    <span class="menu-text">contato</span>
                 </a>
             </li>
 
@@ -85,7 +94,7 @@
 
     </nav>
 
-
+    <script src="script.js"></script>
 
 </body>
 
