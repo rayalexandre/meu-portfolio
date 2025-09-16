@@ -53,12 +53,12 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: var(--cor-fundo);
+    background: rosybrown;
     border-bottom: 5px solid var(--cor-borda)
 }
 
 .menu-desktop {
-    background: gray;
+   
     display: none;
 
     /* esconde o menu  desktop */
@@ -153,6 +153,12 @@ botao menu mobile
     padding: 0.5rem 0;
     display: inline-block;
     font-size: 1rem;
+
+}
+.logo{
+    width: 5.25rem; /* comprimento */
+    height: 1.90rem; /* altura */
+    
 }
 
 /* medidas responsivas */
