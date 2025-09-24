@@ -36,7 +36,16 @@ body {
     /* cor TEXTOS */
     font-family: 'Courier New', Courier, monospace;
 }
-
+/* reset css = padronizar */
+/* seletor universal */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* inverter cor logo */
+html[data-theme='light'] .logo{
+    filter:invert(0) ;
+}
 a {
     color: var(--menu-link);
     text-decoration: none;
@@ -54,7 +63,10 @@ header {
     align-items: center;
     width: 100%;
     background: rosybrown;
-    border-bottom: 5px solid var(--cor-borda)
+    border-bottom: 5px solid var(--cor-borda);
+    position: fixed;
+    z-index:9999 ;
+   
 }
 
 .menu-desktop {
@@ -160,6 +172,15 @@ botao menu mobile
     height: 1.90rem; /* altura */
     
 }
+
+#home{
+    padding: 3.5rem 1rem;
+}
+
+
+
+
+
 
 /* medidas responsivas */
 
