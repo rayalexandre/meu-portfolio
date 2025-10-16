@@ -4,7 +4,7 @@
 :root,
 :root[data-theme='dark'] {
     --cor-fundo: black;
-    --cor-texto: aliceblue;
+    --cor-texto: rgb(0, 0, 0);
     --menu-link: aliceblue;
     --cor-borda: aliceblue;
 
@@ -25,12 +25,16 @@
 }
 
 
-
+* {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
 
 
 
 body {
-    background: var(--cor-fundo);
+    background: linear-gradient(to right, rgb(154, 215, 241), rgb(10, 51, 91));
     /* cor do fundo */
     color: var(--cor-texto);
     /* cor TEXTOS */
@@ -66,7 +70,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: rosybrown;
+    background: linear-gradient(to right, rgb(154, 215, 241), rgb(10, 51, 91));
     border-bottom: 5px solid var(--cor-borda);
     position: fixed;
     z-index: 9999;
@@ -195,26 +199,89 @@ botao menu mobile
 }
 
 #home {
-    padding: 4.5rem 1rem;
     display: flex;
     flex-direction: column;
+    gap: 1.5rem;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
 
 }
 
 h1 {
     font-size: 2.5rem;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
+
+p {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#home,
+.produtos,
+.sobre,
+.contato {
+    padding: 2.5 1rem;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.produtos-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+}
+
+.produto-card {
+    display: flex;
+    gap: 3rem;
+    padding: 20px 0;
+}
+
+.img-card {
+    height: 30%;
+    width: 30%;
+    border-radius: 10px;
+
+}
+
+.card-body{
+display: flex;
+flex-direction:column ;
+justify-content: ;
+align-items: ;
+gap: ;
+
+}
+
+.card-title
+
+
+
+
+
+
+
+
+
+
 
 
 /* medidas responsivas */
 
 @media (min-width: 768px) {
+
 
     .menu-desktop {
         display: flex;
@@ -239,8 +306,11 @@ h1 {
         font-size: 5rem;
     }
 
-    #home {
-        padding: 8rem 6rem 4rem 6rem;
+    #home{
+        padding: 6rem 1rem 2rem 0;
+    }
+    .produtos{
+        padding: 4rem;
     }
 
     .main-content {
@@ -248,9 +318,32 @@ h1 {
         flex-direction: column;
         align-items: flex-start;
     }
-} /* fim min 768px */
+}
+
+/* fim min 768px */
+
+@media (win-width: 992px) {
+    .produtos-card {
+        flex-direction: row;
+    }
+
+    .img-card {
+        height: 55%;
+    }
+}
+
 @media (win-width: 1400px) {
     h1 {
         font-size: 6.5rem;
     }
+
+    .img-card {
+        height: 60%;
+    }
+
+    .produtos,
+    .sobre {
+        padding: 10rem 15rem 4rem;
+    }
+
 }
