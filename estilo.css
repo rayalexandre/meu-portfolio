@@ -6,7 +6,11 @@
     --cor-fundo: black;
     --cor-texto: rgb(0, 0, 0);
     --menu-link: aliceblue;
+
     --cor-borda: aliceblue;
+
+    --cor-hover-icone: aliceblue;
+
 
 }
 
@@ -16,8 +20,10 @@
     --cor-fundo: aliceblue;
     --cor-texto: black;
     --menu-link: black;
-    --cor-borda: black;
 
+
+    --cor-borda: black;
+    --cor-hover-icone: aliceblue;
 
 
 
@@ -30,6 +36,12 @@
     font-weight: 400;
     font-style: normal;
 }
+
+
+html {
+    scroll-behavior: smooth;
+}
+
 
 
 
@@ -256,20 +268,48 @@ p {
 
 }
 
-.card-body{
-display: flex;
-flex-direction:column ;
-justify-content: ;
-align-items: ;
-gap: ;
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
 
 }
 
-.card-title
+.card-item i {
+    margin-right: 8px;
+}
+
+.card-item i:hover {
+    color: var(--cor-hover-icone);
+    transition: 0.3s ease-in-out;
+}
+
+.redes-sociais {
+    font-size: 1.2rem;
+}
+
+.redes-sociais .instagram:hover {
+    color: rgb(118, 21, 121);
+}
+
+.redes-sociais .whatsapp:hover {
+    color: rgb(18, 192, 105);
+}
 
 
 
 
+
+@media (min-width: 768px) {
+
+    #home {
+        padding-top: 4rem;
+
+    }
+
+}
 
 
 
@@ -279,6 +319,21 @@ gap: ;
 
 
 /* medidas responsivas */
+
+@media (min-width: 768px) {
+
+    #home {
+        padding-top: 4rem;
+
+    }
+
+}
+
+
+
+
+
+
 
 @media (min-width: 768px) {
 
@@ -306,10 +361,11 @@ gap: ;
         font-size: 5rem;
     }
 
-    #home{
+    #home {
         padding: 6rem 1rem 2rem 0;
     }
-    .produtos{
+
+    .produtos {
         padding: 4rem;
     }
 
